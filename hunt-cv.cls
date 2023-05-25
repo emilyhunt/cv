@@ -16,12 +16,15 @@
 \RequirePackage{hyperref} 
 \RequirePackage{xcolor}
 \RequirePackage{fontawesome5}
-\RequirePackage{titlesec} % Required for customizing section/subsection/etc titles
+\RequirePackage{titlesec}  % Required for customizing section/subsection/etc titles
+\RequirePackage{fancyhdr}  % For customising headers
+\RequirePackage{lastpage}  % To get number of pages
 
 
 % ---- Definitions ----
 \newcommand{\cvDate}{CV DATE}
 \newcommand{\cvName}{CV NAME}
+\newcommand{\cvInfo}{CV INFO}
 
 
 % ---- Font Shite ----
@@ -57,21 +60,40 @@
   \end{list}
 }
 
+% Headers and footers
+% Firstly, define header/footer style on typical pages 
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+% \lhead{\color{emilygray}\cvName}
+% \lhead{\color{emilygray}\cvName}
+\fancyhead[L]{\color{emilygray}\cvName}
+\fancyhead[C]{\color{emilygray}Curriculum Vitae}
+\fancyhead[R]{\color{emilygray}\cvDate}
+\newcommand{\makePageNumber}{\color{emilygray}\thepage\ of \pageref*{LastPage}}
+\fancyfoot[C]{\makePageNumber}
+
+% Next, redefine 'plain' pagestyle to only contain my own formatted footer
+% Uses method from https://latex.org/forum/viewtopic.php?t=3436
+% and from fancyhdr docs at http://tug.ctan.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\fancypagestyle{plain}{%
+  \fancyhf{}% clear all header and footer fields
+  \fancyfoot[C]{\makePageNumber} % except the center
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+
+
+
 % General formatting commands
-% \newcommand{\cross}[1][1pt]{\textsuperscript{\ooalign{%
-%   \rule[1ex]{1ex}{#1}\cr% Horizontal bar
-%   \hss\rule{#1}{.7em}\hss\cr}}}% Vertical bar
+% These are to be used at points throughout the document!
 \newcommand{\cross}{\textsuperscript{+}}
 
 \newcommand{\cvTitle}{
     \begin{center}
     {\huge \cvName\ -- Curriculum Vitae} \\
     {\small
-        \href{mailto:emily.hunt.physics@gmail.com}{\faEnvelope ~ emily.hunt.physics@gmail.com}
-        ~~~
-        \href{https://emilydoesastro.com}{\faGlobe ~ emilydoesastro.com}
-        ~~~
-        \href{https://github.com/emilyhunt}{\faGithub ~ github.com/emilyhunt}
+        \cvInfo
     }
     \end{center}
 }
