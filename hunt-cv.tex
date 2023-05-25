@@ -6,13 +6,21 @@
 
 % ---- Settings ----
 \renewcommand{\cvDate}{\today}
-\renewcommand{\cvName}{Emily L. Hunt}
-\renewcommand{\cvInfo}{
-    \href{mailto:emily.hunt.physics@gmail.com}{\faEnvelope ~ emily.hunt.physics@gmail.com}
-    ~~~
-    \href{https://emilydoesastro.com}{\faGlobe ~ emilydoesastro.com}
-    ~~~
-    \href{https://github.com/emilyhunt}{\faGithub ~ github.com/emilyhunt}
+\renewcommand{\cvName}{Emily L. Hunt}  % Your name! As displayed in the CV
+\renewcommand{\cvPublicationName}{Hunt, Emily L.}  % Name to highlight in author lists
+\renewcommand{\cvEmail}{emily.hunt.physics@gmail.com}
+\renewcommand{\cvWebsite}{emilydoesastro.com}
+\renewcommand{\cvGitHub}{github.com/emilyhunt}
+
+% PDF metadata
+\hypersetup{
+  colorlinks = true,
+  pdfkeywords = {astrophysics, astronomy, physics},
+  pdftitle = {Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone,
+  linkcolor = emilyred,
+  urlcolor = emilyred
 }
 
 % ---- Body ----
@@ -21,35 +29,61 @@
 
 \cvTitle
 
-% \section*{Personal Information}
-% \begin{itemize}
-%     \item Nationality: British
-%     \item Sex: female
-%     \item Marital status: single
-% \end{itemize}
+% ---------------------------------------
+\section*{Research Profile}
 
-% \section*{Research statement}
+Astronomer with interests in machine learning and statistics. Highly skilled programmer with 10+ years of programming experience. Primarily, I have worked with data from the \emph{Gaia} satellite and open clusters. Particularly interested in unsupervised machine learning and Bayesian machine learning. Looking to work on exciting data analysis projects requiring novel computational solutions.
 
-% I am an ambit
 
 % ---------------------------------------
 \section*{Education}
 
-\begin{itemize}
-    \item Ph. D. 2023. International Max Planck Research School for Astronomy \& Cosmic Physics at the University of Heidelberg. \emph{Advisor: S. Reffert}
-    \item M. Phys. 2019. University of Bath. \emph{Advisor: S. Wuyts}
-    \item Research internship, 2018. University of Bath. \emph{Advisor: V. Scowcroft}
-\end{itemize}
+\subsection*{2023 -- Ph.D. in Astronomy}
+\begin{addmargin}[1em]{0em}
+    \textbf{Heidelberg University, Germany} ~ (IMPRS-HD Graduate School)\\
+    \textbf{Thesis:} ``Improving the census of open clusters in the Milky Way with data from \emph{Gaia}''\\
+    \textbf{Advisor:} S. Reffert
+\end{addmargin}
+
+\subsection*{2019 -- M.Phys. Physics with Astronomy}
+\begin{addmargin}[1em]{0em}
+    \textbf{University of Bath, United Kingdom}\\
+    \textbf{Thesis:} ``Inference of photometric galaxy redshifts with a
+    mixture density network''\\
+    \textbf{Advisor:} S. Wuyts
+\end{addmargin}
+
+\vspace{0.35cm}
+In addition, I completed a research internship while at the University of Bath with V. Scowcroft, using a Bayesian method to de-redden Cepheid variable stars.
+
+% \begin{itemize}
+%     \item Ph.D. 2023. International Max Planck Research School for Astronomy \& Cosmic Physics at the University of Heidelberg. \emph{Advisor: S. Reffert}
+%     \item M.Phys. 2019. University of Bath. \emph{Advisor: S. Wuyts}
+%     \item Research internship, 2018. University of Bath. \emph{Advisor: V. Scowcroft}
+% \end{itemize}
 
 
 % ---------------------------------------
 \section*{Publications}
 
-\begin{itemize}
-    \item \textbf{Emily L. Hunt} and Sabine Reffert (2023). ``Improving the open cluster census. III. The masses and dynamics of open clusters in the Milky Way''. \emph{In prep.}
-    \item \textbf{Emily L. Hunt} and Sabine Reffert (2023). ``Improving the open cluster census. II. An all-sky cluster catalogue with Gaia DR3''. A\&A, 673, A114.
-    \item \textbf{Emily L. Hunt} and Sabine Reffert (2021). ``Improving the open cluster census. I. Comparison of Clustering Algorithms applied to Gaia DR2 Data''. A\&A, 646, A104.
-\end{itemize}
+\begin{etaremune}
+    \item \publication
+        {Hunt, Emily L. and Reffert, Sabine}
+        {in prep.}
+        {Improving the open cluster census. III. The masses and dynamics of open clusters in the Milky Way}
+    \item \publication
+        {Hunt, Emily L. and Reffert, Sabine}
+        {2023}
+        {Improving the open cluster census. II. An all-sky cluster catalogue with Gaia DR3}
+        [A\&A, 673, A114]
+        [https://ui.adsabs.harvard.edu/abs/2023A\%26A...673A.114H]
+    \item \publication
+        {Hunt, Emily L. and Reffert, Sabine}
+        {2021}
+        {Improving the open cluster census. I. Comparison of Clustering Algorithms applied to Gaia DR2 Data}
+        [A\&A, 646, A104]
+        [https://ui.adsabs.harvard.edu/abs/2021A\%26A...646A.104H]
+\end{etaremune}
 
 
 % ---------------------------------------
@@ -74,7 +108,6 @@
 \end{itemize}
 
 * = invited; \cross = outreach.
-\vspace{0.5cm}
 
 % ---------------------------------------
 \section*{Workshops Attended}
@@ -104,6 +137,15 @@
 
 
 % ---------------------------------------
+% \section*{Community Service}
+
+% \subsubsection*{Open-source software}
+
+
+% \subsubsection*{Reviewing}
+
+
+% ---------------------------------------
 \section*{Relevant expertise}
 
 \subsection*{Programming languages}
@@ -120,8 +162,15 @@
 \begin{itemize}
     \item \textbf{Git/GitHub:} expert
     \item \textbf{LaTeX:} expert
+    \item \textbf{HTML/CSS:} intermediate
     \item \textbf{ADQL/SQL:} basic
-    \item \textbf{HTML/CSS:} basic
+\end{itemize}
+
+\subsection*{Languages}
+
+\begin{itemize}
+    \item \textbf{English:} native speaker
+    \item \textbf{German:} intermediate
 \end{itemize}
 
 
