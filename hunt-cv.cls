@@ -11,7 +11,7 @@
 
 
 % ---- Base packages ----
-\RequirePackage[left=1in, right=1in, body={6.5in, 9.0in}]{geometry} % Page margins
+\RequirePackage[left=1in, right=1in, body={6.5in, 9in}, headheight=14.5pt]{geometry} % Page margins
 % \RequirePackage{lipsum}  % Blank text, if needed during e.g. dev work
 \RequirePackage{hyperref}  % Add links
 \RequirePackage{xcolor}  % Define colours etc
