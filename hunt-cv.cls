@@ -33,11 +33,13 @@
 \newcommand{\cvEmail}{\\cvEmail}
 \newcommand{\cvWebsite}{\\cvWebsite}
 \newcommand{\cvGitHub}{\\cvGitHub}
+\newcommand{\cvADS}{\\cvADS}
 
 % These are auto-generated based on other stuff
 \newcommand{\cvEmailLink}{mailto:\cvEmail}
 \newcommand{\cvWebsiteLink}{https://\cvWebsite}
 \newcommand{\cvGitHubLink}{https://\cvGitHub}
+\newcommand{\cvADSLink}{https://\cvADS}
 
 
 % ---- Font Shite ----
