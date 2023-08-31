@@ -128,10 +128,11 @@
 %   Author list
 %   Year
 %   Title
-%   Publication (optional - defaults to "in prep")
+%   Publication (optional)
 %   Link (optional - no link if not specified)
+%   Citation count (optional)
 
-\NewDocumentCommand{\publication}{ m m m o o }{%
+\NewDocumentCommand{\publication}{ m m m o o o }{%
   {\expandarg \StrSubstitute{#1}{\cvPublicationName}{\textbf{\cvPublicationName}}}
   (#2). 
   ``#3''. 
@@ -142,5 +143,8 @@
         {#4}
         {\href{#5}{#4}}
     }
+  \IfNoValueTF{#6}
+  {\IfNoValueTF{#4}{}{}}
+  {(#6 citations)}
 }
 
