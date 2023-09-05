@@ -58,10 +58,10 @@
 \titlespacing{\section}{0cm}{1.0cm}{0cm} % Removes the spacing around the main section titles
 \titlespacing{\subsection}{0cm}{0.6cm}{0.25cm} % Removes the spacing around the subsections
 \titleformat{\section}{ % Customize the large section titles
-\fontsize{15pt}{17pt}\bfseries\color{emilyred}}{}{0em}{}[{\vspace{-0.1em}\titlerule[0.2pt]\vspace{1em}}]
+\fontsize{14pt}{14pt}\bfseries\color{emilyred}}{}{0em}{}[{\vspace{-0.1em}\titlerule[0.2pt]\vspace{1em}}]
 
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
-\fontsize{14pt}{16pt}\normalfont\color{emilygray}}{}{0em}{}%[{\vspace{0.4em}}]
+\fontsize{13pt}{12pt}\normalfont\color{emilygray}}{}{0em}{}%[{\vspace{0.4em}}]
 
 % Paragraph formatting
 \setlength{\parindent}{0pt}
@@ -128,10 +128,11 @@
 %   Author list
 %   Year
 %   Title
-%   Publication (optional - defaults to "in prep")
+%   Publication (optional)
 %   Link (optional - no link if not specified)
+%   Citation count (optional)
 
-\NewDocumentCommand{\publication}{ m m m o o }{%
+\NewDocumentCommand{\publication}{ m m m o o o }{%
   {\expandarg \StrSubstitute{#1}{\cvPublicationName}{\textbf{\cvPublicationName}}}
   (#2). 
   ``#3''. 
@@ -142,5 +143,8 @@
         {#4}
         {\href{#5}{#4}}
     }
+  \IfNoValueTF{#6}
+  {\IfNoValueTF{#4}{}{}}
+  {\\\textbf{(#6 citations)}}
 }
 
