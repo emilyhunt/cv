@@ -27,13 +27,25 @@
 
 % ---- Definitions ----
 % The following can be re-defined in a .tex file and used in the template
-\newcommand{\cvDate}{\\cvDate}
-\newcommand{\cvName}{\\cvName}
-\newcommand{\cvPublicationName}{\\cvPublicationName}
-\newcommand{\cvEmail}{\\cvEmail}
-\newcommand{\cvWebsite}{\\cvWebsite}
-\newcommand{\cvGitHub}{\\cvGitHub}
-\newcommand{\cvADS}{\\cvADS}
+\newcommand{\cvDate}{\today}
+\newcommand{\cvName}{Emily L. Hunt}
+\newcommand{\cvPublicationName}{Hunt, Emily L.}
+\newcommand{\cvEmail}{emily.hunt.physics@gmail.com}
+\newcommand{\cvWebsite}{emily.space}
+\newcommand{\cvGitHub}{github.com/emilyhunt}
+\newcommand{\cvADS}{ui.adsabs.harvard.edu/search/q=orcid\%3A0000-0002-5555-8058&sort=date\%20desc\%2C\%20bibcode\%20desc&p_=0}
+\newcommand{\cvDocumentName}{Curriculum Vitae}
+
+% PDF metadata
+\hypersetup{
+  colorlinks = true,
+  pdfkeywords = {astrophysics, astronomy, physics},
+  pdftitle = {\cvName\ - \cvDocumentName},
+  pdfsubject = {\cvDocumentName},
+  pdfpagemode = UseNone,
+  linkcolor = emilyred,
+  urlcolor = emilyred
+}
 
 % These are auto-generated based on other stuff
 \newcommand{\cvEmailLink}{mailto:\cvEmail}
@@ -110,7 +122,7 @@
 % Document title
 \newcommand{\cvTitle}{
   \begin{center}
-  {\huge \textbf{\cvName} -- Curriculum Vitae} \\
+  {\huge \textbf{\cvName} -- \cvDocumentName} \\
   \vspace{0.2cm}
   {\small
     \href{\cvEmailLink}{\faEnvelope ~ \cvEmail}
