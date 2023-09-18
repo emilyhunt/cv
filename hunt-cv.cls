@@ -38,15 +38,19 @@
 \newcommand{\cvDocumentName}{Curriculum Vitae}
 
 % PDF metadata
-\hypersetup{
-  colorlinks = true,
-  pdfkeywords = {astrophysics, astronomy, physics},
-  pdftitle = {\cvName\ - \cvDocumentName},
-  pdfsubject = {\cvDocumentName},
-  pdfpagemode = UseNone,
-  linkcolor = emilyred,
-  urlcolor = emilyred
+\newcommand{\runhypersetup}{
+  \hypersetup{
+    colorlinks = true,
+    pdfkeywords = {astrophysics, astronomy, physics},
+    pdftitle = {\cvName\ - \cvDocumentName},
+    pdfsubject = {\cvDocumentName},
+    pdfpagemode = UseNone,
+    linkcolor = emilyred,
+    urlcolor = emilyred
+  }
 }
+\runhypersetup
+
 
 % These are auto-generated based on other stuff
 \newcommand{\cvEmailLink}{mailto:\cvEmail}
