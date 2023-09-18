@@ -12,7 +12,7 @@
 
 % ---- Base packages ----
 \RequirePackage[left=1in, right=1in, body={6.5in, 9in}, headheight=14.5pt]{geometry} % Page margins
-% \RequirePackage{lipsum}  % Blank text, if needed during e.g. dev work
+\RequirePackage{lipsum}  % Blank text, if needed during e.g. dev work
 \RequirePackage{hyperref}  % Add links
 \RequirePackage{xcolor}  % Define colours etc
 \RequirePackage{xparse}  % For commands with optional args
@@ -34,6 +34,7 @@
 \newcommand{\cvWebsite}{emily.space}
 \newcommand{\cvGitHub}{github.com/emilyhunt}
 \newcommand{\cvADS}{ui.adsabs.harvard.edu/search/q=orcid\%3A0000-0002-5555-8058&sort=date\%20desc\%2C\%20bibcode\%20desc&p_=0}
+\newcommand{\cvORCID}{orcid.org/0000-0002-5555-8058}
 \newcommand{\cvDocumentName}{Curriculum Vitae}
 
 % PDF metadata
@@ -52,6 +53,7 @@
 \newcommand{\cvWebsiteLink}{https://\cvWebsite}
 \newcommand{\cvGitHubLink}{https://\cvGitHub}
 \newcommand{\cvADSLink}{https://\cvADS}
+\newcommand{\cvORCIDLink}{https://\cvADS}
 
 
 % ---- Font Shite ----
@@ -98,7 +100,7 @@
 % \lhead{\color{emilygray}\cvName}
 % \lhead{\color{emilygray}\cvName}
 \fancyhead[L]{\color{emilygray}\cvName}
-\fancyhead[C]{\color{emilygray}Curriculum Vitae}
+\fancyhead[C]{\color{emilygray}\cvDocumentName}
 \fancyhead[R]{\color{emilygray}\cvDate}
 \newcommand{\makePageNumber}{\color{emilygray}\thepage\ of \pageref*{LastPage}}
 \fancyfoot[C]{\makePageNumber}
