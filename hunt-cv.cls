@@ -23,6 +23,7 @@
 \RequirePackage{lastpage}  % To get number of pages
 \RequirePackage{etaremune}  % Reverse-enumerated lists (LOL that package name) https://tex.stackexchange.com/questions/110236/is-there-a-way-to-get-reverse-numbering-on-the-enumerate-environment
 \RequirePackage{scrextend}  % Used here just for adding left margins
+\RequirePackage{eurosym}  % Required to type a Euro symbol with \euro https://tex.stackexchange.com/a/109267
 
 
 % ---- Definitions ----
