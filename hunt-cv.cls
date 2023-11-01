@@ -33,10 +33,11 @@
 \newcommand{\cvPublicationName}{Hunt, Emily L.}
 \newcommand{\cvEmail}{emily.hunt.physics@gmail.com}
 \newcommand{\cvWebsite}{emily.space}
-\newcommand{\cvGitHub}{github.com/emilyhunt}
+\newcommand{\cvGitHub}{emilyhunt}
 \newcommand{\cvADS}{ui.adsabs.harvard.edu/search/q=orcid\%3A0000-0002-5555-8058&sort=date\%20desc\%2C\%20bibcode\%20desc&p_=0}
 \newcommand{\cvORCID}{orcid.org/0000-0002-5555-8058}
 \newcommand{\cvDocumentName}{Curriculum Vitae}
+\newcommand{\cvPhoneNumber}{On request}
 
 % PDF metadata
 \newcommand{\runhypersetup}{
@@ -56,7 +57,7 @@
 % These are auto-generated based on other stuff
 \newcommand{\cvEmailLink}{mailto:\cvEmail}
 \newcommand{\cvWebsiteLink}{https://\cvWebsite}
-\newcommand{\cvGitHubLink}{https://\cvGitHub}
+\newcommand{\cvGitHubLink}{https://github.com/\cvGitHub}
 \newcommand{\cvADSLink}{https://\cvADS}
 \newcommand{\cvORCIDLink}{https://\cvADS}
 
@@ -132,7 +133,9 @@
   {\huge \textbf{\cvName} -- \cvDocumentName} \\
   \vspace{0.2cm}
   {\small
-    \href{\cvEmailLink}{\faEnvelope ~ \cvEmail}
+    {\color{emilyred}\faPhone ~ \cvPhoneNumber}
+    ~~~
+    \href{\cvEmailLink}{\faEnvelope ~ \cvEmail}    
     ~~~
     \href{\cvWebsiteLink}{\faGlobe ~ \cvWebsite}
     ~~~
