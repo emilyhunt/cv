@@ -1,6 +1,6 @@
 [![Full version](https://img.shields.io/badge/Full_CV-latest-green.svg)](https://raw.githubusercontent.com/emilyhunt/cv/main/hunt-cv.pdf)
 [![Full version without publications](https://img.shields.io/badge/No_Pubs._List-latest-orange.svg)](https://raw.githubusercontent.com/emilyhunt/cv/main/hunt-cv-nopubs.pdf)
-[![AAS formatted version](https://img.shields.io/badge/AAS_format-latest-orange.svg)](https://raw.githubusercontent.com/emilyhunt/cv/main/hunt-cv-aas.pdf)
+[![AAS formatted version](https://img.shields.io/badge/AAS_Format-latest-orange.svg)](https://raw.githubusercontent.com/emilyhunt/cv/main/hunt-cv-aas.pdf)
 [![Publication list](https://img.shields.io/badge/Publications-latest-blue.svg)](https://raw.githubusercontent.com/emilyhunt/cv/main/hunt-publications.pdf)
 
 # Curriculum Vitae
