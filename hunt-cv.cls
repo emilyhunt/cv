@@ -30,7 +30,7 @@
 % The following can be re-defined in a .tex file and used in the template
 \newcommand{\cvDate}{\today}
 \newcommand{\cvName}{Emily L. Hunt}
-\newcommand{\cvPublicationName}{Hunt, Emily L.}
+\newcommand{\cvPublicationName}{Emily L. Hunt}
 \newcommand{\cvEmail}{emily.hunt.physics@gmail.com}
 \newcommand{\cvWebsite}{emily.space}
 \newcommand{\cvGitHub}{emilyhunt}
